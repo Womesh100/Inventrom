@@ -10,8 +10,10 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
+'''.......printing list of all following.............. '''
+
 sleeptime = 4
-pages = tweepy.Cursor(api.followers, screen_name="tweet").pages()
+pages = tweepy.Cursor(api.followers, screen_name="boltiot").pages()
 
 while True:
     try:
@@ -25,8 +27,10 @@ while True:
     for user in page:
        print(user.screen_name)
 
+'''......printing list of all followers.............'''
+
 sleeptime = 4
-pages = tweepy.Cursor(api.friends, screen_name="tweet").pages()
+pages = tweepy.Cursor(api.friends, screen_name="boltiot").pages()
 
 
 while True:
