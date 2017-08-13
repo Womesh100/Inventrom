@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    tools:context="nnk.com.inventrom.Fragment_Actions">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lll"
+        android:gravity="center"
+        android:background="#b9cbe1"
+        android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_Action"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="#757593"
+        android:layout_gravity="center"
+        android:text="Click Picture"
+        android:onClick="formPage"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    </LinearLayout>
+</FrameLayout>

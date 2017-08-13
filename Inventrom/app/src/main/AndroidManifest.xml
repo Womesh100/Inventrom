@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nnk.com.inventrom">
+
+
+    <!-- Using android.permission.WRITE_EXTERNAL_STORAGE we have the read and write permission in the external/internal memory -->
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- android.permission.CAMERA we are giving permission to camera mannually to open that in my Application -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!-- Using android:windowSoftInputMode="adjustResize" screen will up when we have
+        to input in edittext field in user_details Activity class -->
+
+
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".user_details"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".GraphhActivity" />
+        <activity android:name=".MyCamera"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!--
+        ParentActivityName is used for calling desired page(mainActivity).xml
+
+        Using android:screenOrientation="portrait" camera will always been in portrait
+         mode when we click the picture using MyCamera Class-->
+
+
+    </application>
+
+</manifest>

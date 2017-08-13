@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/graphs"
+    android:layout_height="match_parent"
+    tools:context="nnk.com.inventrom.GraphhActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:background="#e5e5f5"
+        android:text="Reset"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#cb0040ff"
+        android:onClick="reset"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-condensed"/>
+
+     <LinearLayout
+           android:id="@+id/ll3"
+           android:layout_width="match_parent"
+           android:layout_height="346dp"
+           android:layout_margin="5dp"
+           android:background="#edecec"
+           android:orientation="horizontal"
+           android:layout_weight="0.75">
+
+         <com.jjoe64.graphview.GraphView
+             android:id="@+id/graph"
+             android:layout_width="match_parent"
+             android:layout_height="400dp"/>
+
+     </LinearLayout>
+
+    <SeekBar
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/sb"
+         android:layout_margin="5dp"
+         android:max="205"/>
+
+</LinearLayout>

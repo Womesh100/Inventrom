@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/ff"
+    android:background="#e8edef"
+    android:layout_height="match_parent"
+    tools:context="nnk.com.inventrom.show_list">
+
+    <!-- List Layout -->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"
+        android:layout_margin="10dp"
+        android:divider="#7a8dfa"
+        android:dividerHeight="2dp"
+        android:text="@string/hello_blank_fragment">
+
+        </ListView>
+
+</FrameLayout>

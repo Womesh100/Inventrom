@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#f1e8e8"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:id="@+id/user_view"
+    android:layout_height="match_parent"
+    tools:context="nnk.com.inventrom.user_details">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:text="Please enter your details :--"
+        android:textColor="#e70520"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Age"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="number"
+        android:maxLength="2"
+        android:hint="Enter Age"
+        android:textColor="@color/textColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Addr"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:hint="Enter Address"
+        android:textColor="@color/textColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb1"
+            android:textColor="@color/textColor"
+            android:buttonTint="@color/tintColor"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Male"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"
+            android:buttonTint="@color/tintColor"
+            android:textColor="@color/textColor"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Fe-Male"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:background="@drawable/buttonresources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:layout_below="@+id/button"
+        android:onClick="submit"
+        android:textColor="#cb0040ff"
+        android:textAlignment="center"
+        style="@style/my_button_style"/>
+
+</LinearLayout>
